@@ -1,0 +1,333 @@
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswaldmedium.woff") format("woff");
+  font-display: swap;
+}
+.page {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+}
+.page__body {
+  margin: 0;
+  padding: 0;
+}
+.site-list {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+  list-style-type: none;
+}
+.site-list__link {
+  color: inherit;
+  text-decoration: none;
+}
+.button {
+  display: inline-block;
+  margin: 0;
+  font-family: "Oswald", "Arial", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #68b738;
+  border: none;
+  cursor: pointer;
+}
+.button--more {
+  color: #444444;
+  background-color: #f2f2f2;
+}
+.promo {
+  padding: 27px 36px 20px;
+  font-family: "Oswald", "Arial", sans-serif;
+  text-align: center;
+  background-image: url("../../img/content/licking-cat-bg.jpg");
+  background-color: #68b738;
+}
+.promo__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: #ffffff;
+}
+.promo__text {
+  line-height: 14px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.program-card {
+  padding: 30px 20px 22px;
+  background-color: #f2f2f2;
+}
+.program-card__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+.program-card__link {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  color: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.about-food {
+  padding: 20px 20px 49px;
+}
+.about-food__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+}
+.about-food__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-weight: 400;
+}
+.food-stories {
+  padding: 25px 20px 40px;
+  background-color: #eaeaea;
+}
+.food-stories__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+}
+.food-stories__text {
+  font-weight: 400;
+}
+.food-stories__summary {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 20px;
+  color: #000000;
+  text-transform: uppercase;
+}
+.stories-stats__result {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: #000000;
+}
+.stories-stats__description {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+}
+.stories-slider__text {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+.company-location {
+  padding: 26px 20px 0;
+}
+.company-location__offer {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+.company-location__address {
+  font-weight: 400;
+  line-height: 20px;
+}
+.page-footer {
+  padding: 39px 20px 22px;
+  background-color: #f2f2f2;
+}
+.social-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.copyright__author {
+  font-size: 16px;
+  font-weight: 400;
+}
+.page-main__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: #000000;
+}
+.main-goods {
+  padding: 20px 20px 25px;
+}
+.product-card__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #222222;
+  text-transform: uppercase;
+}
+.product-card__link {
+  color: inherit;
+  text-decoration: none;
+}
+.product-card__feature {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+}
+.product-card__feature-description {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+}
+.product-card__button {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+.product-card--more .product-card__text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+}
+.additional-goods {
+  padding: 25px 20px 35px;
+}
+.additional-goods__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: #000000;
+}
+.additional-card__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #222222;
+  text-transform: uppercase;
+}
+.additional-card__amount {
+  font-weight: 400;
+  line-height: 14px;
+  color: #444444;
+}
+.additional-card__price {
+  font-weight: 400;
+  line-height: 14px;
+  color: #444444;
+}
+.goods-promo {
+  padding: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  background-image: url("../../img/content/cat-in-bag.jpg");
+  background-color: #68b738;
+  color: #ffffff;
+}
+.goods-promo__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-align: center;
+}
+.program-selection {
+  padding: 37px 20px 32px;
+}
+.program-selection__description {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.program-form__group-title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  color: #000000;
+}
+.program-form__input-wrapper {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #444444;
+}
+.program-form__type-input::placeholder {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #444444;
+}
+.program-form__control-description {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #222222;
+}
+.program-form__control-description--checkbox {
+  color: #000000;
+}
+.program-form__text-field {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #444444;
+}
+.program-form__explanation {
+  font-weight: 400;
+  line-height: 16px;
+  color: #000000;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+img {
+  max-width: 100%;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*# sourceMappingURL=style.css.map */
