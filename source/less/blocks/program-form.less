@@ -1,7 +1,12 @@
 .program-form {
-  @media (max-width: @tablet-width-max) {
+  @media (min-width: @tablet-width) {
     padding-left: 40px;
     padding-right: 37px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 

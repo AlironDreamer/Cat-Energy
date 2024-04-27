@@ -1737,10 +1737,16 @@ img {
     padding-right: 0;
   }
 }
-@media (max-width: 1339px) {
+@media (min-width: 768px) {
   .program-form {
     padding-left: 40px;
     padding-right: 37px;
+  }
+}
+@media (min-width: 1340px) {
+  .program-form {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 .program-form__group {
