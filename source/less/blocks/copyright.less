@@ -1,4 +1,38 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: @color-gray-500;
+
+  &:hover {
+    .copyright__author-icon {
+      fill: @color-primary;
+    }
+  }
+
+  &:active {
+    .copyright__author {
+      color: fade(@color-gray-400, 30%);
+    }
+
+    .copyright__author-icon {
+      fill: @color-secondary;
+    }
+  }
+}
+
 .copyright__author {
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: 16px;
   font-weight: 400;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 22px;
+  }
+}
+
+.copyright__author-icon {
+  fill: @color-gray-400;
 }

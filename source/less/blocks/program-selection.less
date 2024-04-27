@@ -1,9 +1,32 @@
 .program-selection {
-  padding: 37px 20px 32px;
+  padding: 0 20px 32px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 30px 72px;
+  }
+}
+
+.program-selection__wrapper {
+  margin: 0 auto;
 }
 
 .program-selection__description {
+  margin: 0 0 39px;
   font-family: @font-heading;
   font-weight: 400;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 66px;
+    padding-left: 40px;
+    padding-right: 37px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 0;
+    padding-right: 0;
+
+  }
 }

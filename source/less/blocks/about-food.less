@@ -1,13 +1,34 @@
 .about-food {
+  margin: 0 auto;
   padding: 20px 20px 49px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 30px 47px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 60px 26px;
+  }
+}
+
+.about-food__wrapper {
+  margin: 0 auto;
 }
 
 .about-food__title {
+  margin-top: 0;
+  margin-bottom: 40px;
   font-family: @font-heading;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
   color: @color-black;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 32px;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .about-food__list {
@@ -15,4 +36,96 @@
   padding: 0;
   list-style-type: none;
   font-weight: 400;
+  counter-reset: food-steps;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+    row-gap: 37px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.about-food__item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 60px auto;
+  column-gap: 20px;
+  margin-bottom: 20px;
+  counter-increment: food-steps;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 80px auto;
+    row-gap: 31px;
+    margin-left: 0;
+    margin-bottom: 0;
+    padding-top: 40px;
+    padding-right: 65px;
+    min-height: 280px;
+  }
+
+  &--summary {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    content: "";
+    width: 60px;
+    height: 60px;
+    margin-top: -2px;
+    background-color: @color-primary;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+
+    @media (min-width: @tablet-width) {
+      width: 80px;
+      height: 80px;
+      grid-row: ~"1 / 2";
+    }
+  }
+
+  &::after {
+    @media (min-width: @tablet-width) {
+      position: absolute;
+      left: 118px;
+      z-index: -1;
+      content: counter(food-steps);
+      font-family: @font-heading;
+      font-size: 280px;
+      line-height: 280px;
+      color: @color-gray-100;
+    }
+  }
+
+  &--leaf {
+    &::before {
+      background-image: url("../../img/icons/leaf-icon.svg");
+    }
+  }
+
+  &--powder {
+    &::before {
+      background-image: url("../../img/icons/powder-icon.svg");
+    }
+  }
+
+  &--meal {
+    &::before {
+      background-image: url("../../img/icons/meal-icon.svg");
+    }
+  }
+
+  &--clock {
+    &::before {
+      background-image: url("../../img/icons/clock-icon.svg");
+    }
+  }
 }

@@ -1,5 +1,6 @@
 .goods-promo {
-  padding: 40px;
+  padding: 58px 58px 43px;
+  min-height: 290px;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -7,12 +8,35 @@
   background-image: url("../../img/content/cat-in-bag.jpg");
   background-color: @color-primary;
   color: @color-white;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    align-items: center;
+    padding: 57px 124px 60px 77px;
+    min-height: 200px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 42px 43px 42px 41px;
+  }
 }
 
 .goods-promo__text {
+  margin: 0;
+  padding-top: 128px;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: @color-white;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+    padding-left: 345px;
+  }
+
+  @media (min-width: @desktop-width) {
+    align-self: flex-end;
+    padding-left: 0;
+  }
 }

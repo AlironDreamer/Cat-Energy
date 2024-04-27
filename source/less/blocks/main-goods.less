@@ -1,3 +1,16 @@
 .main-goods {
-  padding: 20px 20px 25px;
+  margin-top: -1px;
+  border-top: 1px solid @color-gray-200;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 0;
+    padding: 0 30px 43px;
+    border-top: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 51px;
+  }
 }

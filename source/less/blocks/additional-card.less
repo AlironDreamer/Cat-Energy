@@ -1,20 +1,84 @@
+.additional-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "title title"
+                       "amount price"
+                       "btn btn";
+  margin-top: -1px;
+  padding-top: 13px;
+  padding-bottom: 19px;
+  border-top: 1px solid @color-gray-300;
+
+
+  &:last-of-type {
+    border-bottom: 1px solid @color-gray-300;
+  }
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 1fr 200px 100px;
+    grid-template-areas: "title amount price"
+                         "btn btn btn";
+    column-gap: 30px;
+    row-gap: 25px;
+    padding: 26px 38px 28px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 200px 100px 244px;
+    grid-template-areas: "title amount price btn";
+    padding: 15px 0 17px;
+    align-items: center;
+  }
+}
+
 .additional-card__title {
+  grid-area: title;
+  margin: 0 0 13px;
   font-family: @font-heading;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
   color: @color-gray-600;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .additional-card__amount {
+  grid-area: amount;
+  margin: 0 0 15px;
   font-weight: 400;
   line-height: 14px;
   color: @color-gray-500;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    font-size: 16px;
+    line-height: 20px;
+    justify-self: end;
+  }
 }
 
 .additional-card__price {
+  grid-area: price;
+  justify-self: end;
+  margin: 0;
   font-weight: 400;
   line-height: 14px;
   color: @color-gray-500;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.additional-card__button {
+  grid-area: btn;
+  font-size: 16px;
+  line-height: 20px;
 }

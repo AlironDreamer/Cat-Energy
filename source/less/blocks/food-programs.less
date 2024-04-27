@@ -1,0 +1,34 @@
+.food-programs {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 45px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 82px 60px 71px;
+  }
+}
+
+.food-programs__wrapper {
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 80px;
+    row-gap: 30px;
+  }
+}
+
+.food-programs__card:not(.food-programs__card:last-of-type) {
+  margin-bottom: 20px;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+  }
+}
