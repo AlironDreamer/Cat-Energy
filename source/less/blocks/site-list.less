@@ -10,10 +10,15 @@
   text-align: center;
   list-style-type: none;
 
+  @media (max-width: @mobile-width-max) {
+    background-color: @color-white;
+  }
+
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
+    align-items: center;
     column-gap: 15px;
     row-gap: 10px;
     font-weight: 400;
@@ -31,8 +36,7 @@
   position: relative;
 
   @media (max-width: @mobile-width-max) {
-    padding: 12px 20px 14px;
-    margin-top: -1px;
+    padding: 11px 20px 14px;
     border-top: 1px solid @color-gray-250;
   }
 
@@ -41,8 +45,8 @@
       &::after {
         position: absolute;
         content: "";
-        left: 10px;
-        right: 10px;
+        left: 5px;
+        right: 5px;
         bottom: 0;
         height: 2px;
         background-color: @color-primary;
@@ -51,6 +55,12 @@
 
     .site-list__link {
       cursor: default;
+    }
+  }
+
+  &--end {
+    @media (max-width: @mobile-width-max) {
+      border-bottom: 1px solid @color-gray-250;
     }
   }
 }
@@ -65,8 +75,7 @@
   cursor: pointer;
 
   @media (min-width: @tablet-width) {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 15px 5px;
 
     &:hover[href] {
       color: fade(@color-black, 60%);
@@ -75,6 +84,11 @@
     &:active[href] {
       color: fade(@color-black, 30%);
     }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 19px;
+    padding-bottom: 18px;
   }
 }
 

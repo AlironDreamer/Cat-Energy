@@ -69,7 +69,76 @@
       transform: translate(0, -50%);
     }
   }
+}
 
+.program-card {
+  .program-card__title {
+    &::after {
+      position: absolute;
+      top: 50%;
+      content: "";
+      transform: translate(0, -50%);
+    }
+  }
+}
+
+.program-card:nth-of-type(1) {
+  .program-card__title {
+    &::after {
+      left: -71px;
+      width: 50px;
+      height: 53px;
+      background-image: url("../../img/icons/cat-slim-icon.svg");
+      background-size: 50px 53px;
+
+      @media (min-width: @tablet-width) {
+        left: auto;
+        top: 46%;
+        right: 91px;
+        width: 140px;
+        height: 194px;
+        background-size: 140px 194px;
+      }
+
+      @media (min-width: @desktop-width) {
+        right: auto;
+        top: 30%;
+        left: -147px;
+        width: 70px;
+        height: 97px;
+        background-size: 70px 97px;
+      }
+    }
+  }
+}
+
+.program-card:nth-of-type(2) {
+  .program-card__title {
+    &::after {
+      left: -80px;
+      width: 67px;
+      height: 28px;
+      background-image: url("../../img/icons/cat-pro-icon.svg");
+      background-size: 67px 28px;
+
+      @media (min-width: @tablet-width) {
+        top: 53%;
+        left: auto;
+        right: 31px;
+        width: 268px;
+        height: 112px;
+        background-size: 268px 112px;
+      }
+
+      @media (min-width: @desktop-width) {
+        left: -180px;
+        right: auto;
+        width: 134px;
+        height: 56px;
+        background-size: 134px 56px;
+      }
+    }
+  }
 }
 
 .program-card__description {

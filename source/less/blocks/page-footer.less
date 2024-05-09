@@ -31,22 +31,14 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 0;
-  }
 
-  &:hover {
-    .page-footer__company-name {
-      fill: fade(@color-gray-700, 80%);
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:focus {
+      opacity: 0.6;
     }
   }
 
-  &:active {
-    .page-footer__company-name {
-      fill: fade(@color-gray-700, 60%);
-    }
-  }
-
-}
-
-.page-footer__company-name {
-  fill: @color-gray-700;
 }

@@ -4,10 +4,11 @@
 
   @media (max-width: @mobile-width-max) {
     text-align: center;
-    background-image: url("../../img/content/licking-cat-bg.jpg"),
-    linear-gradient(180deg, rgb(104, 183, 56) 302px, rgb(255, 255, 255) 178px);
+    background-image: url("../../img/background/licking-cat-bg.jpg"),
+    linear-gradient(#63a63b 0, #63a63b 302px, @color-white 302px);
     background-position: 50% 0;
-    background-color: @color-primary;
+    background-color: #63a63b;
+    background-color: #63a63b;
     background-repeat: no-repeat;
   }
 
@@ -22,12 +23,11 @@
     &::after {
       position: absolute;
       content: "";
-      top: -132px;
+      top: -152px;
       bottom: 0;
       right: 0;
       left: 50%;
       z-index: -2;
-      width: 720px;
       background-color: fade(@color-primary, 85%);
     }
   }
@@ -38,7 +38,9 @@
 
   @media (min-width: @tablet-width) {
     position: relative;
-    padding-right: 207px;
+    padding-left: 81px;
+    text-align: left;
+    padding-right: 100px;
   }
 
   @media (min-width: @desktop-width) {
@@ -88,23 +90,17 @@
   }
 }
 
-.promo__img-container {
-  @media (min-width: @tablet-width) {
-    position: absolute;
-    top: 197px;
-    z-index: -1;
-  }
-
-  @media (min-width: @desktop-width) {
-    top: 0;
-    left: calc(50% - 162px);
-  }
-}
 
 .promo__img {
   width: 280px;
+  height: 270px;
 
   @media (min-width: @tablet-width) {
+    position: absolute;
+    z-index: -1;
+    top: 197px;
+    left: 0;
+    right: 0;
     width: 709px;
     height: 609px;
   }
@@ -112,6 +108,8 @@
   @media (min-width: @desktop-width) {
     width: 552px;
     height: 499px;
+    top: 0;
+    left: calc(50% - 162px);
   }
 }
 

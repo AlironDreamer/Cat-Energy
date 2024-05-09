@@ -11,13 +11,13 @@
     }
   }
 
-  &:active {
+  &:focus {
     .copyright__author {
       color: fade(@color-gray-400, 30%);
     }
 
     .copyright__author-icon {
-      fill: @color-secondary;
+      fill: fade(@color-secondary, 30%);
     }
   }
 }
