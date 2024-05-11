@@ -75,7 +75,7 @@
   </section>
   <section class="about-food">
     <div class="about-food__wrapper container">
-      <h2 class="about-food__title">Как это работает?</h2>
+      <h2 class="about-food__title">Как это работает</h2>
       <ol class="about-food__list">
         <li class="about-food__item about-food__item--leaf">Функциональное питание содержит только полезные питательные вещества.</li>
         <li class="about-food__item about-food__item--powder">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
@@ -108,26 +108,27 @@
         </p>
       </div>
       <div class="food-stories__view stories-view">
-        <div class="stories-view__image-before">
+        <div class="stories-view__image-before" id="before-container">
           <picture>
-            <source media="(min-width: 768px)" srcset="img/content/cat-slider--tablet.png 1x, img/content/cat-slider--tablet@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/content/cat-before--tablet.png 1x, img/content/cat-before--tablet@2x.png 2x">
             <img class="stories-view__image" src="img/content/cat-before--mobile.png" srcset="img/content/cat-before--mobile@2x.png 2x" width="280" height="232" alt="Толстый кот до приёма питания">
           </picture>
         </div>
-        <div class="stories-view__image-after stories-view__image-after--disabled">
-          <img class="stories-view__image" src="img/content/cat-after--mobile.png" srcset="img/content/cat-after--mobile@2x.png 2x" width="243" height="232" alt="Худой кот после курса питания">
+        <div class="stories-view__image-after" id="after-container" style="width: 0; overflow: hidden;">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/content/cat-after--tablet.png 1x">
+            <img class="stories-view__image" src="img/content/cat-after--mobile.png" width="243" height="232" alt="Худой кот после курса питания">
+          </picture>
         </div>
         <div class="stories-view__container">
-          <button class="stories-view__button">Было</button>
+          <button class="stories-view__button" type="button" id="before-button">Было</button>
           <div class="stories-view__toggler">
-            <div class="stories-view__toggler-marker" style="left: 6px;"></div>
+            <div class="stories-view__toggler-marker" id="toggler-marker" style="left: 6px;"></div>
           </div>
           <div class="stories-view__slider">
-            <div class="stories-view__slider-base">
-              <button class="stories-view__slider-button" style="left: 204px;"></button>
-            </div>
+            <input class="stories-view__slider-base" type="range" min="1" max="100" value="1" name="slider" id="slider">
           </div>
-          <button class="stories-view__button" type="button">Стало</button>
+          <button class="stories-view__button" type="button" id="after-button">Стало</button>
         </div>
       </div>
     </div>
@@ -135,7 +136,7 @@
   <section class="company-location">
     <h2 class="visually-hidden">Адрес компании-производителя</h2>
     <div class="company-location__wrapper container">
-      <p class="company-location__offer">Приглашаем к сотрудничеству дилеров!</p>
+      <p class="company-location__offer">Приглашаем<br>к&nbsp;сотрудничеству дилеров!</p>
       <p class="company-location__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
     </div>
     <img class="company-location__map" src="img/content/company-location.png" width="320" height="362" alt="Расположение компании на карте">
@@ -182,6 +183,7 @@
     </a>
   </div>
 </footer>
-<script src="js/header-menu.js"></script>
+<script src="js/headerMenu.js"></script>
+<script src="js/sliderScript.js"></script>
 </body>
 </html>

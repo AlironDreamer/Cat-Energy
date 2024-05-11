@@ -4,7 +4,7 @@
 .page-header__nav {
   @media (max-width: @mobile-width-max) {
     border-bottom: 1px solid @color-gray-250;
-    margin-bottom: -1px;
+    margin-bottom: -2px;
   }
 
   @media (min-width: @tablet-width) {
@@ -44,6 +44,7 @@
       left: 0;
       right: 0;
       z-index: 5;
+      margin-top: -1px;
       display: block;
     }
 
@@ -117,11 +118,15 @@
 }
 
 .page-header__logo-text {
+  margin-top: 5px;
+  margin-left: 4px;
   justify-self: center;
   max-width: 100%;
 }
 
 .page-header__toggle {
+  margin-top: 3px;
+  margin-left: 4px;
   align-self: center;
   width: 34px;
   height: 34px;
