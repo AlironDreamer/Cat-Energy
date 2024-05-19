@@ -1,9 +1,16 @@
 .copyright {
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(min-content, max-content) max-content;
+  column-gap: 16px;
   justify-content: space-between;
   align-items: center;
   text-decoration: none;
   color: @color-gray-500;
+
+  @media (min-width: @tablet-width) {
+    justify-content: end;
+    column-gap: 23px;
+  }
 
   &:hover {
     .copyright__author-icon {
@@ -29,7 +36,7 @@
   font-weight: 400;
 
   @media (min-width: @tablet-width) {
-    margin-right: 22px;
+    margin-right: 0;
   }
 }
 

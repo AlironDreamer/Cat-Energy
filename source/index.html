@@ -62,14 +62,14 @@
         <h3 class="program-card__title">Похудение</h3>
         <p class="program-card__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
           Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-        <a class="program-card__link" href="#">Каталог SLIM</a>
+        <a class="program-card__link" href="#">Каталог&nbsp;SLIM</a>
       </div>
       <div class="food-programs__card program-card program-card--pro">
         <h3 class="program-card__title">Набор массы</h3>
         <p class="program-card__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy
           Pro
           поможет вашему коту нарастить необходимые мышцы.</p>
-        <a class="program-card__link" href="#">Каталог PRO</a>
+        <a class="program-card__link" href="#">Каталог&nbsp;PRO</a>
       </div>
     </div>
   </section>
@@ -103,8 +103,8 @@
           <p class="stories-stats__description">затрачено времени</p>
         </div>
         <p class="food-stories__summary">
-          <span>Затраты на питание:</span><br>
-          <span>15000 руб.</span>
+          <span>Затраты на питание:</span>
+          <span>15 000 руб.</span>
         </p>
       </div>
       <div class="food-stories__view stories-view">
@@ -116,8 +116,8 @@
         </div>
         <div class="stories-view__image-after" id="after-container" style="width: 0; overflow: hidden;">
           <picture>
-            <source media="(min-width: 768px)" srcset="img/content/cat-after--tablet.png 1x">
-            <img class="stories-view__image" src="img/content/cat-after--mobile.png" width="243" height="232" alt="Худой кот после курса питания">
+            <source media="(min-width: 768px)" srcset="img/content/cat-after--tablet.png 1x, img/content/cat-after--tablet@2x.png 2x">
+            <img class="stories-view__image" src="img/content/cat-after--mobile.png" srcset="img/content/cat-after--mobile@2x.png" width="243" height="232" alt="Худой кот после курса питания">
           </picture>
         </div>
         <div class="stories-view__container">
@@ -126,7 +126,8 @@
             <div class="stories-view__toggler-marker" id="toggler-marker" style="left: 6px;"></div>
           </div>
           <div class="stories-view__slider">
-            <input class="stories-view__slider-base" type="range" min="1" max="100" value="1" name="slider" id="slider">
+            <label class="visually-hidden" for="slider">Слайдер прокрутки изображений</label>
+            <input class="stories-view__slider-base" type="range" min="0" max="100" value="0" name="slider" id="slider">
           </div>
           <button class="stories-view__button" type="button" id="after-button">Стало</button>
         </div>
@@ -137,9 +138,13 @@
     <h2 class="visually-hidden">Адрес компании-производителя</h2>
     <div class="company-location__wrapper container">
       <p class="company-location__offer">Приглашаем<br>к&nbsp;сотрудничеству дилеров!</p>
-      <p class="company-location__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <p class="company-location__address">
+        <span>ул. Большая Конюшенная, д. 19/8</span>
+        <span>Санкт-Петербург</span>
+      </p>
     </div>
-    <img class="company-location__map" src="img/content/company-location.png" width="320" height="362" alt="Расположение компании на карте">
+    <iframe class="company-location__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Abdd66cd25659d9d954f89adbb23dda0894bce765ff25eb04b12af87550bf12e8&amp;source=constructor" width="320" height="362" frameborder="0"></iframe>
+    <img class="company-location__map--no-js" src="img/content/company-location.png" srcset="img/content/company-location@2x.png 2x" width="320" height="362" alt="Расположение компании на карте">
   </section>
 </main>
 <footer class="page__footer page-footer">

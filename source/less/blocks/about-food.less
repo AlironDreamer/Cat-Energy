@@ -49,6 +49,7 @@
 
   @media (min-width: @desktop-width) {
     grid-template-columns: repeat(4, 1fr);
+    column-gap: 77px;
   }
 }
 
@@ -57,7 +58,6 @@
   display: grid;
   grid-template-columns: 60px auto;
   column-gap: 20px;
-  margin-bottom: 23px;
   counter-increment: food-steps;
 
   @media (min-width: @tablet-width) {
@@ -73,7 +73,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-right: 15px;
+    padding-right: 0;
   }
 
   &--summary {
@@ -99,7 +99,7 @@
   &::after {
     @media (min-width: @tablet-width) {
       position: absolute;
-      left: 118px;
+      left: 116px;
       z-index: -1;
       content: counter(food-steps);
       font-family: @font-heading;
@@ -132,4 +132,11 @@
       background-image: url("../../img/icons/clock-icon.svg");
     }
   }
+}
+
+.about-food__item + .about-food__item {
+  @media (max-width: @mobile-width-max) {
+    margin-top: 23px;
+  }
+
 }

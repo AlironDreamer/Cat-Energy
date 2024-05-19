@@ -14,18 +14,19 @@
   }
 
   @media (min-width: @tablet-width) {
-    grid-template-columns: 1fr 200px 100px;
+    grid-template-columns: 1fr 200px 73px;
     grid-template-areas: "title amount price"
                          "btn btn btn";
-    column-gap: 30px;
-    row-gap: 25px;
+    column-gap: 20px;
+    row-gap: 21px;
     padding: 26px 38px 28px;
   }
 
   @media (min-width: @desktop-width) {
     grid-template-columns: 1fr 200px 100px 244px;
     grid-template-areas: "title amount price btn";
-    padding: 15px 0 17px;
+    column-gap: 13px;
+    padding: 15px 0 16px;
     align-items: center;
   }
 }
@@ -56,9 +57,14 @@
 
   @media (min-width: @tablet-width) {
     margin: 0;
+    margin-top: 3px;
     font-size: 16px;
     line-height: 20px;
     justify-self: end;
+  }
+
+  @media (min-width: @desktop-width) {
+    justify-self: start;
   }
 }
 
@@ -71,8 +77,13 @@
   color: @color-gray-500;
 
   @media (min-width: @tablet-width) {
+    margin-top: 3px;
     font-size: 16px;
     line-height: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    justify-self: center;
   }
 }
 

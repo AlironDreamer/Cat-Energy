@@ -37,7 +37,7 @@
   padding-bottom: 27px;
 
   @media (min-width: @tablet-width) {
-    padding-bottom: 72px;
+    padding-bottom: 75px;
   }
 
   @media (min-width: @desktop-width) {
@@ -53,6 +53,12 @@
     padding: 25px 28px;
     outline: 1px solid @color-gray-240;
     outline-offset: -1px;
+  }
+}
+
+.program-form-group--type + .program-form-group--type {
+  @media (min-width: @tablet-width) {
+    margin-top: 20px;
   }
 }
 
@@ -95,13 +101,13 @@
     }
 
     @media (min-width: @desktop-width) {
-      padding-top: 69px;
+      padding-top: 67px;
     }
 
   }
 
   @media (min-width: @tablet-width) {
-    padding-bottom: 65px;
+    padding-bottom: 67px;
   }
 
   @media (min-width: @desktop-width) {
@@ -127,6 +133,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 78px;
+    row-gap: 50px;
   }
 
   .program-form__text-wrapper {
@@ -138,6 +145,16 @@
 }
 
 .program-form-group--comment {
+  padding-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 61px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 63px;
+  }
+
   .program-form__group-title {
     margin-bottom: 38px;
 
@@ -145,16 +162,6 @@
       margin-bottom: 76px;
     }
 
-  }
-
-  padding-bottom: 20px;
-
-  @media (min-width: @tablet-width) {
-    padding-bottom: 65px;
-  }
-
-  @media (min-width: @desktop-width) {
-    padding-bottom: 67px;
   }
 }
 
@@ -200,7 +207,6 @@
     left: 0;
     right: 0;
     z-index: -1;
-    width: 100vw;
     height: 2px;
     margin-top: 16px;
     background-color: @color-primary;
@@ -221,8 +227,8 @@
 
     @media (min-width: @tablet-width) {
       width: auto;
-      padding: 0 38px;
-      margin-left: -38px;
+      padding: 0 40px;
+      margin-left: -40px;
     }
   }
 }
@@ -230,7 +236,7 @@
 .program-form__text-wrapper {
   position: relative;
   display: grid;
-  grid-template-columns: max-content 1fr;
+  grid-template-columns: minmax(min-content,max-content) minmax(200px,1fr);
   align-items: center;
   column-gap: 13px;
   font-family: @font-heading;
@@ -240,6 +246,7 @@
   color: @color-gray-500;
 
   @media (min-width: @tablet-width) {
+    column-gap: 18px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -247,8 +254,12 @@
 
 .program-form__text-wrapper--with-icon {
   display: grid;
-  grid-template-columns: max-content 1fr 50px;
+  grid-template-columns: minmax(min-content,max-content) minmax(150px,1fr) 50px;
   column-gap: 10px;
+
+  @media (min-width: @tablet-width) {
+    column-gap: 17px;
+  }
 
   .program-form__icon {
     grid-column: ~"3 / 4";
@@ -263,6 +274,10 @@
       margin-top: 3px;
       fill: @color-gray-600;
       stroke-width: 0;
+
+      @media (min-width: @tablet-width) {
+        margin-left: 0;
+      }
     }
   }
 
@@ -270,6 +285,11 @@
     grid-column: ~"2 / -1";
     grid-row: ~"1 / 2";
     padding-right: 50px;
+
+
+    @media (min-width: @tablet-width) {
+      padding-left: 21px;
+    }
 
     &:focus + .program-form__icon {
       stroke: @color-primary;
@@ -387,6 +407,7 @@
   }
 
   @media (min-width: @tablet-width) {
+    column-gap: 20px;
     grid-template-columns: 40px 1fr;
     font-size: 20px;
     line-height: 30px;
@@ -452,6 +473,8 @@
   }
 
   @media (min-width: @tablet-width) {
+    padding: 11px 12px 11px 19px;
+    min-height: 174px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -461,7 +484,7 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 57px;
+    column-gap: 93px;
     row-gap: 32px;
     align-items: flex-start;
   }
@@ -473,7 +496,7 @@
 
 .program-form__check-wrapper {
   @media (min-width: @tablet-width) {
-    flex-basis: 287px;
+    flex-basis: 250px;
   }
 
   @media (min-width: @desktop-width) {
@@ -490,9 +513,9 @@
 .program-form__button-wrapper {
   @media (min-width: @tablet-width) {
     display: flex;
+    flex-wrap: wrap;
     column-gap: 61px;
     align-items: center;
-    padding-left: 40px;
     padding-right: 37px;
   }
 
@@ -512,13 +535,17 @@
     min-width: 282px;
     font-size: 20px;
     line-height: 20px;
-    padding-top: 13px;
-    padding-bottom: 13px;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 
   @media (min-width: @desktop-width) {
     min-width: 568px;
   }
+}
+
+.program-form__button + .program-form__button {
+  margin-top: 10px;
 }
 
 .program-form__explanation {

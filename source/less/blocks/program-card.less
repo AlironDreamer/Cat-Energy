@@ -1,26 +1,26 @@
 .program-card {
-  margin: 0 auto;
-  width: 280px;
-  padding: 30px 20px 22px;
+  padding: 23px 20px 22px;
   background-color: @color-gray-100;
 
   @media (min-width: @tablet-width) {
     position: relative;
-    width: 708px;
-    padding: 77px 316px 57px 52px;
+    padding: 69px 316px 62px 52px;
   }
 
   @media (min-width: @desktop-width) {
     width: 570px;
-    padding: 77px 52px 59px;
+    padding: 71px 52px 64px;
   }
 }
 
 .program-card__title {
   position: relative;
+  display: flex;
+  align-items: center;
   margin-top: 0;
   margin-left: 71px;
-  margin-bottom: 29px;
+  margin-bottom: 23px;
+  min-height: 50px;
   font-family: @font-heading;
   font-weight: 400;
   font-size: 24px;
@@ -30,7 +30,7 @@
   @media (min-width: @tablet-width) {
     position: static;
     margin-left: 0;
-    margin-bottom: 24px;
+    margin-bottom: 19px;
     font-size: 36px;
     line-height: 36px;
   }
@@ -38,22 +38,21 @@
   @media (min-width: @desktop-width) {
     position: relative;
     margin-left: 162px;
-    margin-bottom: 73px;
+    margin-bottom: 65px;
   }
 
   &::before {
     position: absolute;
     content: "";
-    top: 50%;
+    top: 0;
     left: -69px;
     width: 50px;
     height: 50px;
     border-radius: 50%;
     background-color: @color-primary;
-    transform: translate(0, -50%);
 
     @media (min-width: @tablet-width) {
-      top: 50%;
+      top: 52%;
       left: auto;
       right: 62px;
       width: 200px;
@@ -82,10 +81,10 @@
   }
 }
 
-.program-card:nth-of-type(1) {
+.program-card--slim {
   .program-card__title {
     &::after {
-      top: 16px;
+      top: 22px;
       left: -69px;
       width: 50px;
       height: 53px;
@@ -94,7 +93,7 @@
 
       @media (min-width: @tablet-width) {
         left: auto;
-        top: 46%;
+        top: 48%;
         right: 91px;
         width: 140px;
         height: 194px;
@@ -103,7 +102,7 @@
 
       @media (min-width: @desktop-width) {
         right: auto;
-        top: 30%;
+        top: 47%;
         left: -147px;
         width: 70px;
         height: 97px;
@@ -113,9 +112,10 @@
   }
 }
 
-.program-card:nth-of-type(2) {
+.program-card--pro {
   .program-card__title {
     &::after {
+      top: 27px;
       left: -78px;
       width: 67px;
       height: 28px;
@@ -123,9 +123,9 @@
       background-size: 67px 28px;
 
       @media (min-width: @tablet-width) {
-        top: 53%;
+        top: 51%;
         left: auto;
-        right: 31px;
+        right: 29px;
         width: 268px;
         height: 112px;
         background-size: 268px 112px;
@@ -155,21 +155,21 @@
   }
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 52px;
+    margin-bottom: 56px;
     font-size: 16px;
     line-height: 24px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 27px;
+    margin-bottom: 32px;
   }
 }
 
 .program-card__link {
   display: grid;
-  grid-template-columns: max-content 32px;
+  grid-template-columns: minmax(min-content, max-content) 32px;
   align-items: center;
-  gap: 25px;
+  gap: 16px;
   position: relative;
   font-family: @font-heading;
   font-size: 16px;
@@ -179,14 +179,12 @@
   text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
+    gap: 25px;
     font-size: 20px;
     line-height: 20px;
   }
 
   &::after {
-    position: absolute;
-    grid-column: ~"2 / -1";
-    grid-row: ~"1 / 2";
     content: "";
     width: 24px;
     height: 12px;

@@ -3,7 +3,6 @@
     position: relative;
     display: grid;
     grid-template-columns: 1220px;
-    align-items: center;
     justify-content: center;
     min-height: 400px;
   }
@@ -15,6 +14,14 @@
     @media (min-width: @desktop-width) {
       background-color: initial;
     }
+
+    .company-location__wrapper {
+      @media (min-width: @desktop-width) {
+        padding-left: 80px;
+        padding-right: 64px;
+        max-width: 1160px;
+      }
+    }
   }
 
 
@@ -22,21 +29,23 @@
 
 .company-location__wrapper {
   display: flex;
-  padding: 26px 0 26px;
+  justify-content: space-between;
+  padding: 26px 20px 26px;
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 172px 172px;
     justify-content: space-between;
-    padding: 56px 40px;
+    padding: 59px 70px;
   }
 
   @media (min-width: @desktop-width) {
     position: relative;
+    z-index: 1;
     width: 565px;
-    margin: 0;
-    padding: 56px 80px;
+    margin: 95px 0 107px 0;
+    padding: 56px 64px 56px 80px;
     background-color: @color-white;
   }
 }
@@ -45,6 +54,7 @@
   margin-top: 0;
   margin-bottom: 0;
   padding-right: 18px;
+  max-width: 200px;
   font-family: @font-heading;
   font-weight: 400;
   font-size: 16px;
@@ -60,12 +70,20 @@
 .company-location__address {
   margin-top: 0;
   margin-bottom: 0;
+  max-width: 175px;
   font-weight: 400;
   line-height: 20px;
 
   @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
     font-size: 16px;
     text-align: right;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: left;
   }
 }
 
@@ -75,10 +93,17 @@
   height: 362px;
   object-fit: cover;
 
+  @media (min-width: @tablet-width) {
+    height: 400px;
+  }
+
   @media (min-width: @desktop-width) {
     position: absolute;
     top: 0;
-    z-index: -1;
     height: 400px;
+  }
+
+  &--no-js {
+    display: none;
   }
 }

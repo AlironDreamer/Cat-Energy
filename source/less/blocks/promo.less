@@ -8,8 +8,15 @@
     linear-gradient(#63a63b 0, #63a63b 302px, @color-white 302px);
     background-position: 50% 0;
     background-color: #63a63b;
-    background-color: #63a63b;
     background-repeat: no-repeat;
+
+    @media
+    (min-resolution: 144dpi),
+    (min-resolution: 2dppx) {
+      background-image: url("../../img/background/licking-cat-bg@2x.jpg"),
+      linear-gradient(#63a63b 0, #63a63b 302px, @color-white 302px);
+      background-size: auto 302px, auto;
+    }
   }
 
   @media (min-width: @tablet-width) {
@@ -28,7 +35,16 @@
       right: 0;
       left: 50%;
       z-index: -2;
-      background-color: fade(@color-primary, 85%);
+      background-color: #63a63b;
+      background-image: url("../../img/background/licking-cat-bg-L.jpg");
+      background-repeat: no-repeat;
+
+      @media
+      (min-resolution: 144dpi),
+      (min-resolution: 2dppx) {
+        background-image: url("../../img/background/licking-cat-bg-L@2x.jpg");
+        background-size: 1044px auto;
+      }
     }
   }
 }
@@ -38,9 +54,9 @@
 
   @media (min-width: @tablet-width) {
     position: relative;
-    padding-left: 81px;
+    padding-left: 88px;
     text-align: left;
-    padding-right: 100px;
+    padding-right: 95px;
   }
 
   @media (min-width: @desktop-width) {
@@ -60,6 +76,7 @@
   color: @color-white;
 
   @media (min-width: @tablet-width) {
+    padding-right: 110px;
     margin-bottom: 41px;
     font-size: 60px;
     line-height: 60px;
@@ -98,29 +115,37 @@
   @media (min-width: @tablet-width) {
     position: absolute;
     z-index: -1;
-    top: 197px;
+    top: 201px;
     left: 0;
     right: 0;
     width: 709px;
     height: 609px;
+    margin: 0 auto;
   }
 
   @media (min-width: @desktop-width) {
     width: 552px;
     height: 499px;
-    top: 0;
-    left: calc(50% - 162px);
+    top: -64px;
+    left: calc(50% - 383px);
   }
 }
 
 .promo__button {
+  display: block;
   padding: 11px 20px;
-  min-width: 280px;
+  max-width: 460px;
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    padding: 14px;
-    min-width: 244px;
+    padding: 17px;
+    max-width: 244px;
     font-size: 20px;
     line-height: 20px;
+    margin-left: 0;
   }
+}
+
+.promo__button + .promo__button {
+  margin-top: 10px;
 }
