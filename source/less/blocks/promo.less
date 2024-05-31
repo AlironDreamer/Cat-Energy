@@ -4,7 +4,7 @@
 
   @media (max-width: @mobile-width-max) {
     text-align: center;
-    background-image: url("../../img/background/licking-cat-bg.jpg"),
+    background-image: url("../img/background/licking-cat-bg.jpg"),
     linear-gradient(#63a63b 0, #63a63b 302px, @color-white 302px);
     background-position: 50% 0;
     background-color: #63a63b;
@@ -13,7 +13,7 @@
     @media
     (min-resolution: 144dpi),
     (min-resolution: 2dppx) {
-      background-image: url("../../img/background/licking-cat-bg@2x.jpg"),
+      background-image: url("../img/background/licking-cat-bg@2x.jpg"),
       linear-gradient(#63a63b 0, #63a63b 302px, @color-white 302px);
       background-size: auto 302px, auto;
     }
@@ -30,19 +30,20 @@
     &::after {
       position: absolute;
       content: "";
-      top: -152px;
+      top: -200px;
       bottom: 0;
       right: 0;
       left: 50%;
       z-index: -2;
       background-color: #63a63b;
-      background-image: url("../../img/background/licking-cat-bg-L.jpg");
+      background-image: url("../img/background/licking-cat-bg-L.jpg");
       background-repeat: no-repeat;
+      background-position-y: 100%;
 
       @media
       (min-resolution: 144dpi),
       (min-resolution: 2dppx) {
-        background-image: url("../../img/background/licking-cat-bg-L@2x.jpg");
+        background-image: url("../img/background/licking-cat-bg-L@2x.jpg");
         background-size: 1044px auto;
       }
     }
