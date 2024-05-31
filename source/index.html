@@ -3,12 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Функциональное питание для котов Cat Energy">
   <title>Функциональное питание для котов Cat Energy</title>
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/180.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" href="fonts/oswaldregular.woff" type="font/woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page__body">
 <header class="page__header page-header">
@@ -21,7 +24,7 @@
           <img class="page-header__logo-img" src="img/logos/logo--mobile.svg" alt="Cat Energy" width="34" height="38">
         </picture>
         <svg class="page-header__logo-text" width="101" height="18" aria-hidden="true" focusable="false" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <use xlink:href="img/icons/sprite.svg#header-logo__text"></use>
+          <use xlink:href="img/sprite.svg#logo__text--header"></use>
         </svg>
       </a>
       <button class="button page-header__toggle" type="button">
@@ -48,6 +51,9 @@
       <h2 class="promo__title">Функциональное питание для котов</h2>
       <p class="promo__text">Занялся собой? Займись котом!</p>
       <picture>
+        <source media="(min-width: 1340px)" type="image/webp" srcset="img/content/index-can--desktop.webp 1x, img/content/index-can--desktop@2x.webp 2x">
+        <source media="(min-width: 768px)" type="image/webp" srcset="img/content/index-can--tablet.webp 1x, img/content/index-can--tablet@2x.webp 2x">
+        <source type="image/webp" srcset="img/content/index-can--mobile.webp 1x, img/content/index-can--mobile@2x.webp 2x">
         <source media="(min-width: 1340px)" srcset="img/content/index-can--desktop.png 1x, img/content/index-can--desktop@2x.png 2x">
         <source media="(min-width: 768px)" srcset="img/content/index-can--tablet.jpg 1x, img/content/index-can--tablet@2x.jpg 2x">
         <img class="promo__img" src="img/content/index-can--mobile.png" srcset="img/content/index-can--mobile@2x.png 2x" width="280" height="270" alt="Упаковка еды Cat Energy Pro со вкусом курицы">
@@ -110,12 +116,16 @@
       <div class="food-stories__view stories-view">
         <div class="stories-view__image-before" id="before-container">
           <picture>
+            <source media="(min-width: 768px)" type="image/webp" srcset="img/content/cat-before--tablet.webp 1x, img/content/cat-before--tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/content/cat-before--mobile.webp 1x, img/content/cat-before--mobile@2x.webp 2x">
             <source media="(min-width: 768px)" srcset="img/content/cat-before--tablet.png 1x, img/content/cat-before--tablet@2x.png 2x">
             <img class="stories-view__image" src="img/content/cat-before--mobile.png" srcset="img/content/cat-before--mobile@2x.png 2x" width="280" height="232" alt="Толстый кот до приёма питания">
           </picture>
         </div>
         <div class="stories-view__image-after" id="after-container" style="width: 0; overflow: hidden;">
           <picture>
+            <source media="(min-width: 768px)" type="image/webp" srcset="img/content/cat-after--tablet.webp 1x, img/content/cat-after--tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/content/cat-after--mobile.webp 1x, img/content/cat-after--mobile@2x.webp 2x">
             <source media="(min-width: 768px)" srcset="img/content/cat-after--tablet.png 1x, img/content/cat-after--tablet@2x.png 2x">
             <img class="stories-view__image" src="img/content/cat-after--mobile.png" srcset="img/content/cat-after--mobile@2x.png" width="243" height="232" alt="Худой кот после курса питания">
           </picture>
@@ -149,9 +159,9 @@
 </main>
 <footer class="page__footer page-footer">
   <div class="page-footer__container container">
-    <a class="page-footer__logo" href="#">
+    <a class="page-footer__logo">
       <svg class="page-footer__company-name" width="128" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <use xlink:href="img/icons/sprite.svg#footer-logo__text"></use>
+        <use xlink:href="img/sprite.svg#logo__text--footer"></use>
       </svg>
     </a>
     <ul class="page-footer__social-list social-list">
@@ -159,7 +169,7 @@
         <a class="social-list__link" href="">
           <span class="visually-hidden">Vkontakte</span>
           <svg class="social-list__icon social-list__icon--vk" width="23" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <use xlink:href="img/icons/sprite.svg#social-icon__vk"></use>
+            <use xlink:href="img/sprite.svg#vk-icon"></use>
           </svg>
         </a>
       </li>
@@ -167,7 +177,7 @@
         <a class="social-list__link" href="">
           <span class="visually-hidden">Instagram</span>
           <svg class="social-list__icon social-list__icon--instagram" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <use xlink:href="img/icons/sprite.svg#social-icon__instagram"></use>
+            <use xlink:href="img/sprite.svg#instagram-icon"></use>
           </svg>
         </a>
       </li>
@@ -175,7 +185,7 @@
         <a class="social-list__link" href="">
           <span class="visually-hidden">Facebook</span>
           <svg class="social-list__icon social-list__icon--fb" width="13" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <use xlink:href="img/icons/sprite.svg#social-icon__fb"></use>
+            <use xlink:href="img/sprite.svg#facebook-icon"></use>
           </svg>
         </a>
       </li>
@@ -183,12 +193,11 @@
     <a class="page-footer__copyright copyright" href="#" aria-label="Спроектировано HTML Academy">
       <p class="copyright__author">HTML Academy</p>
       <svg class="copyright__author-icon" width="27" height="34" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <use xlink:href="img/icons/sprite.svg#copyright__author"></use>
+        <use xlink:href="img/sprite.svg#designer-icon"></use>
       </svg>
     </a>
   </div>
 </footer>
-<script src="js/headerMenu.js"></script>
-<script src="js/sliderScript.js"></script>
+<script src="js/script.min.js"></script>
 </body>
 </html>

@@ -3,12 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Каталог товаров питания для котов">
   <title>Каталог продукции</title>
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/180.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" href="fonts/oswaldregular.woff" type="font/woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page__body">
 <header class="page__header page-header">
@@ -21,7 +24,7 @@
           <img class="page-header__logo-img" src="img/logos/logo--mobile.svg" alt="Cat Energy" width="34" height="38">
         </picture>
         <svg class="page-header__logo-text" width="101" height="18" aria-hidden="true" focusable="false" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <use xlink:href="img/icons/sprite.svg#header-logo__text"></use>
+          <use xlink:href="img/sprite.svg#logo__text--header"></use>
         </svg>
       </a>
       <button class="button page-header__toggle" type="button">
@@ -53,6 +56,8 @@
           </a>
           <div class="product-card__img-wrapper">
             <picture>
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/catalog/energy-pro-500-chicken--medium.webp 1x, img/catalog/energy-pro-500-chicken--medium@2x.webp 2x">
+              <source type="image/webp" srcset="img/catalog/energy-pro-500-chicken--small.webp 1x, img/catalog/energy-pro-500-chicken--small@2x.webp 2x">
               <source media="(min-width: 768px)" srcset="img/catalog/energy-pro-500-chicken--medium.png 1x, img/catalog/energy-pro-500-chicken--medium@2x.png 2x">
               <img class=product-card__img src="img/catalog/energy-pro-500-chicken--small.png" srcset="img/catalog/energy-pro-500-chicken--small@2x.png 2x" alt="" width="68" height="86" aria-hidden="true">
             </picture>
@@ -75,6 +80,8 @@
           </a>
           <div class="product-card__img-wrapper">
             <picture>
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/catalog/energy-pro-1000-chicken--medium.webp 1x, img/catalog/energy-pro-1000-chicken--medium@2x.png 2x">
+              <source srcset="img/catalog/energy-pro-1000-chicken--small.webp 1x, img/catalog/energy-pro-1000-chicken--small@2x.webp 2x">
               <source media="(min-width: 768px)" srcset="img/catalog/energy-pro-1000-chicken--medium.png 1x, img/catalog/energy-pro-1000-chicken--medium@2x.png 2x">
               <img class=product-card__img src="img/catalog/energy-pro-1000-chicken--small.png" srcset="img/catalog/energy-pro-1000-chicken--small@2x.png 2x" alt="" width="68" height="86" aria-hidden="true">
             </picture>
@@ -97,6 +104,8 @@
           </a>
           <div class="product-card__img-wrapper">
             <picture>
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/catalog/energy-pro-500-fish--medium.webp 1x, img/catalog/energy-pro-500-fish--medium@2x.webp 2x">
+              <source type="image/webp" srcset="img/catalog/energy-pro-500-fish--small.webp 1x, img/catalog/energy-pro-500-fish--small@2x.webp 2x">
               <source media="(min-width: 768px)" srcset="img/catalog/energy-pro-500-fish--medium.png 1x, img/catalog/energy-pro-500-fish--medium@2x.png 2x">
               <img class=product-card__img src="img/catalog/energy-pro-500-fish--small.png" srcset="img/catalog/energy-pro-500-fish--small@2x.png 2x" alt="" width="68" height="86" aria-hidden="true">
             </picture>
@@ -119,6 +128,8 @@
           </a>
           <div class="product-card__img-wrapper">
             <picture>
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/catalog/energy-pro-1000-fish--medium.webp 1x, img/catalog/energy-pro-1000-fish--medium@2x.webp 2x">
+              <source type="image/webp" srcset="img/catalog/energy-pro-1000-fish--small.webp 1x, img/catalog/energy-pro-1000-fish--small@2x.webp 2x">
               <source media="(min-width: 768px)" srcset="img/catalog/energy-pro-1000-fish--medium.png 1x, img/catalog/energy-pro-1000-fish--medium@2x.png 2x">
               <img class=product-card__img src="img/catalog/energy-pro-1000-fish--small.png" srcset="img/catalog/energy-pro-1000-fish--small@2x.png 2x" alt="" width="68" height="86" aria-hidden="true">
             </picture>
@@ -141,6 +152,8 @@
           </a>
           <div class="product-card__img-wrapper">
             <picture>
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/catalog/energy-pro-500-buckwheat--medium.webp 1x, img/catalog/energy-pro-500-buckwheat--medium@2x.webp 2x">
+              <source type="image/webp" srcset="img/catalog/energy-pro-500-buckwheat--small.webp 1x, img/catalog/energy-pro-500-buckwheat--small@2x.webp 2x">
               <source media="(min-width: 768px)" srcset="img/catalog/energy-pro-500-buckwheat--medium.png 1x, img/catalog/energy-pro-500-buckwheat--medium@2x.png 2x">
               <img class=product-card__img src="img/catalog/energy-pro-500-buckwheat--small.png" srcset="img/catalog/energy-pro-500-buckwheat--small@2x.png 2x" alt="" width="68" height="86" aria-hidden="true">
             </picture>
@@ -163,6 +176,8 @@
           </a>
           <div class="product-card__img-wrapper">
             <picture>
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/catalog/energy-pro-1000-buckwheat--medium.webp 1x, img/catalog/energy-pro-1000-buckwheat--medium@2x.webp 2x">
+              <source type="image/webp" srcset="img/catalog/energy-pro-1000-buckwheat--small.webp 1x, img/catalog/energy-pro-1000-buckwheat--small@2x.webp 2x">
               <source media="(min-width: 768px)" srcset="img/catalog/energy-pro-1000-buckwheat--medium.png 1x, img/catalog/energy-pro-1000-buckwheat--medium@2x.png 2x">
               <img class=product-card__img src="img/catalog/energy-pro-1000-buckwheat--small.png" srcset="img/catalog/energy-pro-1000-buckwheat--small@2x.png 2x" alt="" width="68" height="86" aria-hidden="true">
             </picture>
@@ -185,6 +200,8 @@
           </a>
           <div class="product-card__img-wrapper">
             <picture>
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/catalog/energy-pro-500-rice--medium.webp 1x, img/catalog/energy-pro-500-rice--medium@2x.webp 2x">
+              <source type="image/webp" srcset="img/catalog/energy-pro-500-rice--small.webp 1x, img/catalog/energy-pro-500-rice--small@2x.webp 2x">
               <source media="(min-width: 768px)" srcset="img/catalog/energy-pro-500-rice--medium.png 1x, img/catalog/energy-pro-500-rice--medium@2x.png 2x">
               <img class=product-card__img src="img/catalog/energy-pro-500-rice--small.png" srcset="img/catalog/energy-pro-500-rice--small@2x.png 2x" alt="" width="68" height="86" aria-hidden="true">
             </picture>
@@ -259,9 +276,9 @@
 </main>
 <footer class="page__footer page-footer">
   <div class="page-footer__container container">
-    <a class="page-footer__logo" href="#">
+    <a class="page-footer__logo">
       <svg class="page-footer__company-name" width="128" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <use xlink:href="img/icons/sprite.svg#footer-logo__text"></use>
+        <use xlink:href="img/sprite.svg#logo__text--footer"></use>
       </svg>
     </a>
     <ul class="page-footer__social-list social-list">
@@ -269,7 +286,7 @@
         <a class="social-list__link" href="">
           <span class="visually-hidden">Vkontakte</span>
           <svg class="social-list__icon social-list__icon--vk" width="23" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <use xlink:href="img/icons/sprite.svg#social-icon__vk"></use>
+            <use xlink:href="img/sprite.svg#vk-icon"></use>
           </svg>
         </a>
       </li>
@@ -277,7 +294,7 @@
         <a class="social-list__link" href="">
           <span class="visually-hidden">Instagram</span>
           <svg class="social-list__icon social-list__icon--instagram" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <use xlink:href="img/icons/sprite.svg#social-icon__instagram"></use>
+            <use xlink:href="img/sprite.svg#instagram-icon"></use>
           </svg>
         </a>
       </li>
@@ -285,7 +302,7 @@
         <a class="social-list__link" href="">
           <span class="visually-hidden">Facebook</span>
           <svg class="social-list__icon social-list__icon--fb" width="13" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <use xlink:href="img/icons/sprite.svg#social-icon__fb"></use>
+            <use xlink:href="img/sprite.svg#facebook-icon"></use>
           </svg>
         </a>
       </li>
@@ -293,11 +310,11 @@
     <a class="page-footer__copyright copyright" href="#" aria-label="Спроектировано HTML Academy">
       <p class="copyright__author">HTML Academy</p>
       <svg class="copyright__author-icon" width="27" height="34" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <use xlink:href="img/icons/sprite.svg#copyright__author"></use>
+        <use xlink:href="img/sprite.svg#designer-icon"></use>
       </svg>
     </a>
   </div>
 </footer>
-<script src="js/headerMenu.js"></script>
+<script src="js/script.min.js"></script>
 </body>
 </html>

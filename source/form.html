@@ -3,12 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Форма подбора программы питания для котов">
   <title>Подбор программы</title>
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/180.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" href="fonts/oswaldregular.woff" type="font/woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page__body">
 <header class="page__header page-header">
@@ -21,7 +24,7 @@
           <img class="page-header__logo-img" src="img/logos/logo--mobile.svg" alt="Cat Energy" width="34" height="38">
         </picture>
         <svg class="page-header__logo-text" width="101" height="18" aria-hidden="true" focusable="false" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <use xlink:href="img/icons/sprite.svg#header-logo__text"></use>
+          <use xlink:href="img/sprite.svg#logo__text--header"></use>
         </svg>
       </a>
       <button class="button page-header__toggle" type="button">
@@ -64,18 +67,15 @@
         <fieldset class="program-form__group program-form-group program-form-group--type program-form__group--type">
           <legend class="visually-hidden">Тип программы питания</legend>
           <label class="program-form__radio-wrapper">
-            <input class="visually-hidden program-form__radio-input input" type="radio" name="Program type"
-                   value="Похудение" checked>
+            <input class="visually-hidden program-form__radio-input input" type="radio" name="Program type" value="Похудение" checked>
             <span class="program-form__control-mark">Похудение</span>
           </label>
           <label class="program-form__radio-wrapper">
-            <input class="visually-hidden program-form__radio-input input" type="radio" name="Program type"
-                   value="Набор массы">
+            <input class="visually-hidden program-form__radio-input input" type="radio" name="Program type" value="Набор массы">
             <span class="program-form__control-mark">Набор массы</span>
           </label>
           <label class="program-form__radio-wrapper">
-            <input class="visually-hidden program-form__radio-input input" type="radio" name="Program type"
-                   value="Не знаю (Нужен ваш совет)">
+            <input class="visually-hidden program-form__radio-input input" type="radio" name="Program type" value="Не знаю (Нужен ваш совет)">
             <span class="program-form__control-mark">Не знаю (Нужен ваш совет)</span>
           </label>
         </fieldset>
@@ -86,19 +86,15 @@
         </legend>
         <div class="program-form__owner-wrapper">
           <label class="program-form__text-wrapper program-form__text-wrapper--with-icon">E-mail:*
-            <input class="program-form__type-input input" type="email" name="Owner email"
-                   placeholder="kuklachev@gmail.com" required>
-            <svg class="program-form__icon" width="19" height="14" viewBox="0 0 19 14"
-                 xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="img/icons/sprite.svg#letter-icon"></use>
+            <input class="program-form__type-input input" type="email" name="Owner email" placeholder="kuklachev@gmail.com" required>
+            <svg class="program-form__icon" width="19" height="14" viewBox="0 0 19 14" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#letter-icon"></use>
             </svg>
           </label>
           <label class="program-form__text-wrapper program-form__text-wrapper--with-icon">Телефон:*
-            <input class="program-form__type-input input" type="tel" name="Owner number" placeholder="8 (960) 900-60-90"
-                   required>
-            <svg class="program-form__icon program-form__icon--phone" width="21" height="21" viewBox="0 0 21 21"
-                 xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="img/icons/sprite.svg#phone-icon"></use>
+            <input class="program-form__type-input input" type="tel" name="Owner number" placeholder="8 (960) 900-60-90" required>
+            <svg class="program-form__icon program-form__icon--phone" width="21" height="21" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#phone-icon"></use>
             </svg>
           </label>
         </div>
@@ -117,23 +113,19 @@
         </legend>
         <div class="program-form-group__wrapper">
           <label class="program-form__check-wrapper">
-            <input class="visually-hidden program-form__check-input input" type="checkbox" name="Additionally"
-                   value="Cахарозаменитель" checked>
+            <input class="visually-hidden program-form__check-input input" type="checkbox" name="Additionally" value="Cахарозаменитель" checked>
             <span class="program-form__control-mark program-form__control-mark--checkbox">Cахарозаменитель</span>
           </label>
           <label class="program-form__check-wrapper">
-            <input class="visually-hidden program-form__check-input input" type="checkbox" name="Additionally"
-                   value="Питьевая вода">
+            <input class="visually-hidden program-form__check-input input" type="checkbox" name="Additionally" value="Питьевая вода">
             <span class="program-form__control-mark program-form__control-mark--checkbox">Питьевая вода</span>
           </label>
           <label class="program-form__check-wrapper">
-            <input class="visually-hidden program-form__check-input input" type="checkbox" name="Additionally"
-                   value="Молоко">
+            <input class="visually-hidden program-form__check-input input" type="checkbox" name="Additionally" value="Молоко">
             <span class="program-form__control-mark program-form__control-mark--checkbox">Молоко</span>
           </label>
           <label class="program-form__check-wrapper">
-            <input class="visually-hidden program-form__check-input input" type="checkbox" name="Additionally"
-                   value="Витамины">
+            <input class="visually-hidden program-form__check-input input" type="checkbox" name="Additionally" value="Витамины">
             <span class="program-form__control-mark program-form__control-mark--checkbox">Витамины</span>
           </label>
         </div>
@@ -159,50 +151,45 @@
 </main>
 <footer class="page__footer page-footer">
   <div class="page-footer__container container">
-    <a class="page-footer__logo" href="#">
-      <svg class="page-footer__company-name" width="128" height="24" fill="none"
-           xmlns="http://www.w3.org/2000/svg">
-        <use xlink:href="img/icons/sprite.svg#footer-logo__text"></use>
+    <a class="page-footer__logo">
+      <svg class="page-footer__company-name" width="128" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="img/sprite.svg#logo__text--footer"></use>
       </svg>
     </a>
     <ul class="page-footer__social-list social-list">
       <li class="social-list__item">
         <a class="social-list__link" href="">
           <span class="visually-hidden">Vkontakte</span>
-          <svg class="social-list__icon social-list__icon--vk" width="23" height="16" fill="none"
-               xmlns="http://www.w3.org/2000/svg">
-            <use xlink:href="img/icons/sprite.svg#social-icon__vk"></use>
+          <svg class="social-list__icon social-list__icon--vk" width="23" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/sprite.svg#vk-icon"></use>
           </svg>
         </a>
       </li>
       <li class="social-list__item">
         <a class="social-list__link" href="">
           <span class="visually-hidden">Instagram</span>
-          <svg class="social-list__icon social-list__icon--instagram" width="16" height="16" fill="none"
-               xmlns="http://www.w3.org/2000/svg">
-            <use xlink:href="img/icons/sprite.svg#social-icon__instagram"></use>
+          <svg class="social-list__icon social-list__icon--instagram" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/sprite.svg#instagram-icon"></use>
           </svg>
         </a>
       </li>
       <li class="social-list__item">
         <a class="social-list__link" href="">
           <span class="visually-hidden">Facebook</span>
-          <svg class="social-list__icon social-list__icon--fb" width="13" height="20" fill="none"
-               xmlns="http://www.w3.org/2000/svg">
-            <use xlink:href="img/icons/sprite.svg#social-icon__fb"></use>
+          <svg class="social-list__icon social-list__icon--fb" width="13" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/sprite.svg#facebook-icon"></use>
           </svg>
         </a>
       </li>
     </ul>
     <a class="page-footer__copyright copyright" href="#" aria-label="Спроектировано HTML Academy">
       <p class="copyright__author">HTML Academy</p>
-      <svg class="copyright__author-icon" width="27" height="34" fill="none"
-           xmlns="http://www.w3.org/2000/svg">
-        <use xlink:href="img/icons/sprite.svg#copyright__author"></use>
+      <svg class="copyright__author-icon" width="27" height="34" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="img/sprite.svg#designer-icon"></use>
       </svg>
     </a>
   </div>
 </footer>
-<script src="js/headerMenu.js"></script>
+<script src="js/script.min.js"></script>
 </body>
 </html>

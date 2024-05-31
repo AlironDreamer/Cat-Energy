@@ -89,9 +89,8 @@
 }
 
 .stories-view__button {
-  margin: 0;
-  padding: 0;
-  padding-bottom: 4px;
+  margin: 0 5px;
+  padding: 0 0 4px;
   font-family: @font-heading;
   font-weight: 400;
   font-size: 16px;
@@ -108,10 +107,13 @@
   }
 
   &:active {
+    padding-bottom: 5px;
     border-bottom: none;
   }
 
   @media (min-width: @tablet-width) {
+    margin-left: 10px;
+    margin-right: 10px;
     font-size: 20px;
   }
 }
